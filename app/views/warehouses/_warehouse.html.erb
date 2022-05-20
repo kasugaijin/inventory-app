@@ -1,0 +1,10 @@
+<%= link_to 'Home', root_path %>
+
+<div id="<%= dom_id warehouse %>">
+  <p>Warehouse: <strong><%= warehouse.name %></strong></p>
+
+  <div>
+    <h3>Inventory Store</h3>
+    <%= render @warehouse.inventory %>
+  </div>
+</div>
