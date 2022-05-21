@@ -1,16 +1,15 @@
 <p style="color: green"><%= notice %></p>
 
 <h2>Your Warehouses</h2>
+<%= link_to "Add New Warehouse", new_warehouse_path %>
 
 <div id="warehouses">
   <% @warehouses.each do |warehouse| %>
     <div class='card'>
       <%= warehouse.name %>
       <p>
-        <%= link_to "Edit", edit_warehouse_path(warehouse) %>
+       <%= link_to "View", warehouse %>
       </p>
     </div>
   <% end %>
 </div>
-
-<%= link_to "Add New Warehouse", new_warehouse_path %>

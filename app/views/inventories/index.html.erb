@@ -2,15 +2,15 @@
 
 <h2>Your Vehicle Collection</h2>
 
+<%= link_to "Add new inventory", new_inventory_path %>
+
 <div id="inventories">
   <% @inventories.each do |inventory| %>
     <div class='card'>
       <%= render inventory %>
       <p>
-        <%= link_to "Edit", edit_inventory_path(inventory) %>
+        <%= link_to "View", inventory %>
       </p>
     </div>
   <% end %>
 </div>
-
-<%= link_to "Add new inventory", new_inventory_path %>

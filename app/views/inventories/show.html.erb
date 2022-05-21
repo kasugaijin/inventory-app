@@ -1,7 +1,7 @@
 <p style="color: green"><%= notice %></p>
-<%= render @inventory %><br />
+<%= render @inventory %>
 
-<%= link_to "Edit this inventory", edit_inventory_path(@inventory) %>
-
-<%= button_to "Destroy this inventory", @inventory, method: :delete %>
+  <%= link_to "Edit", edit_inventory_path(@inventory) %>
+<br />
+  <%= button_to "Destroy", @inventory, method: :delete %>
 

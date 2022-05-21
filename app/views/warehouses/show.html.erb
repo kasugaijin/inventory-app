@@ -4,6 +4,6 @@
 
 <div>
   <%= link_to "Edit this warehouse", edit_warehouse_path(@warehouse) %>
-
   <%= button_to "Destroy this warehouse", @warehouse, method: :delete %>
+  <p class='small'>Only destroy an empty warehouse!</p>
 </div>

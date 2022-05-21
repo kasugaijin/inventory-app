@@ -14,6 +14,13 @@
  *= require_self
  */
 
+ body {
+   height: 100%;
+   background-image: url('http://www.diseno-art.com/images_2/Mazda_Taiki_concept_car_white.jpg');
+   background-repeat: no-repeat;
+   background-position: right;
+   font-size: larger;
+ }
 
  .header {
    display: flex;
@@ -32,9 +39,14 @@
    border: solid 2px black;
    border-radius: 5px;
    width: 300px;
-   margin-bottom: 20px;
+   margin-top: 20px;
+   padding: 5px;
  }
 
  button {
    margin-top: 20px;
+ }
+
+ .small {
+   font-size: smaller;
  }
