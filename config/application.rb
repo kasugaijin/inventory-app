@@ -18,5 +18,10 @@ module InventoryApp
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+    
+    # Allow framing to see output in Repl.it
+    config.action_dispatch.default_headers = {
+      'X-Frame-Options' => ''
+    }
   end
 end
