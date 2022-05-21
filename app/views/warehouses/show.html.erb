@@ -3,8 +3,7 @@
 <%= render @warehouse %><br />
 
 <div>
-  <%= link_to "Edit this warehouse", edit_warehouse_path(@warehouse) %> |
-  <%= link_to "Back to warehouses", warehouses_path %>
+  <%= link_to "Edit this warehouse", edit_warehouse_path(@warehouse) %>
 
   <%= button_to "Destroy this warehouse", @warehouse, method: :delete %>
 </div>

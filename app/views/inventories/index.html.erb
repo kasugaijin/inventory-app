@@ -1,16 +1,16 @@
 <p style="color: green"><%= notice %></p>
 
-<h3>Your Vehicle Collection</h3>
+<h2>Your Vehicle Collection</h2>
 
 <div id="inventories">
   <% @inventories.each do |inventory| %>
     <div class='card'>
       <%= render inventory %>
       <p>
-        <%= link_to "Show this inventory", inventory %>
+        <%= link_to "Edit", edit_inventory_path(inventory) %>
       </p>
     </div>
   <% end %>
 </div>
 
-<%= link_to "New inventory", new_inventory_path %>
+<%= link_to "Add new inventory", new_inventory_path %>

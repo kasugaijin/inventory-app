@@ -23,9 +23,18 @@
    height: 75px;
  }
 
+ .problem {
+   font-family:'cursive';
+   font-size: 30px;
+ }
+
  .card {
    border: solid 2px black;
    border-radius: 5px;
-   width: 200px;
+   width: 300px;
    margin-bottom: 20px;
+ }
+
+ button {
+   margin-top: 20px;
  }

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>InventoryApp</title>
+    <title>Vehicle Inventory Tracker</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -12,8 +12,9 @@
 
 <div class='header'>
   <h1>Vehicle Inventory Tracker</h1>
-  <p>Warehouses</p>
-  <p>Vehicles</p>
+  <%= link_to 'Warehouses', warehouses_path%>
+  <%= link_to 'Vehicles', inventories_path%>
+  <p class='problem'>I just have so many cars I lose track...</p>
 </div>
 
   <body>
